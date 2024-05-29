@@ -1,0 +1,12 @@
+{
+    "firstName":"Mohamed",
+    "lastName":"Elnady",
+    "email":"elnady@gmail.com",
+    "password":"nice",
+    "phone":"01121841997",
+    "school":"zahran",
+    "degree":"PHD",
+    "ssn":"888888",
+    "birthDate":"2020-12-20",
+    "student":true
+}

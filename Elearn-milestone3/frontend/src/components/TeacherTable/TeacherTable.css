@@ -1,0 +1,7 @@
+.page{
+    margin: 10px;
+}
+.pages{
+    display: flex;
+    justify-content: flex-end;
+}

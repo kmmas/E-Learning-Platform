@@ -1,0 +1,168 @@
+.Lgradient-custom-2 {
+  background-color: transparent;
+  background-size: contain;
+}
+.Lbody{
+  width: auto;
+  height: 100vh;
+  background-color: transparent;
+  background-image: url(../../images/d0UDNT.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid;
+  overflow: hidden;
+}
+  .Lgradient-form {
+    height: 90% !important;
+    width: 80%;
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: transparent;
+  }
+.Lall{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+}
+.Lleftside{
+  width: 50%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  border-bottom-left-radius: 15px ;
+  border-top-left-radius: 15px ;
+
+}
+.Lrightside{
+  width: 50%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.214);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.LrightContent{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.Linp{
+  width: 85%;
+  border: 1px solid rgb(185, 185, 185);
+  border-radius: 5px;
+  height: 40px;
+  padding: 7px;
+}
+.Lbut{
+  background: rgb(93, 150, 200);
+  width: 150px;
+  border-radius: 8px;
+  border: 1px solid ;
+  height: 40px;
+  color: white;
+}
+.Lbut:active{
+  background: white;
+  color: black;
+}
+.Lbut:hover{
+  background: rgb(73, 162, 241);
+}
+.Lbut2{
+  background: rgb(248, 245, 245);
+  width: 120px;
+  border-radius: 8px;
+  border: 1px solid rgb(70, 144, 209);
+  height: 30px;
+  color: rgb(70, 144, 209);
+}
+.Lbut2:active{
+  background: white;
+  color: black;
+  border: 1px solid black;
+  /* font-size: smaller; */
+}
+.Lbut2:hover{
+  background: rgb(233, 233, 233);
+}
+.Ldont{
+  height: 100%;
+  margin: 0;
+  font-size: 17px;
+}
+.Lend{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.Lff{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 200px;
+}
+.Ltext{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Lhh{
+  color: white;
+}
+.Lvibrate {
+  animation: vibrate 0.3s ease-in-out infinite; /* Define the vibrate animation */
+  border-color: red;
+  color: red;
+}
+
+@keyframes vibrate {
+  0%,
+  100% {
+    transform: translateX(0); /* Initial and final position */
+  }
+  25%,
+  75% {
+    transform: translateX(-5px); /* Move to the left */
+  }
+  50% {
+    transform: translateX(5px); /* Move to the right */
+  }
+}
+@media (max-width: 1000px) {
+  .Lall {
+    width: 900px; /* Set your constant width in pixels */
+    overflow: hidden;
+  }
+  .Lgradient-form{
+    width: 900px; /* Set your constant width in pixels */
+    overflow: hidden;
+  }
+}
+@media (max-height: 600px) {
+  .Lall {
+    height: 600px; /* Set your constant height in pixels */
+    overflow: hidden;
+  }
+  .Lgradient-form{
+    height: 600px; /* Set your constant height in pixels */
+    overflow: hidden;
+  }
+}

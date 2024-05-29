@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Ubuntu:wght@700&display=swap');
+
+
+#profile{
+    margin: 20px 20px 5px 20px;
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    border: 5px solid rgb(142, 142, 142);
+}
+.all-profile{
+    height: 550px;
+    background-image:url("../../images/download.jpeg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    overflow: hidden;
+    margin-bottom: 50px;
+    
+}
+.image-container{
+    position: relative;
+    top: 200px;
+    width: 380px;
+    /* height: 100%; */
+    border-radius: 50px;
+    background-color: rgba(2, 2, 2, 0.637);
+}
+.profile{
+    width: 100%;
+    position: absolute;
+    top:-20%;
+    transform: translateX(-50%);
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.button{
+    padding: 5px;
+    margin-top: 10px;
+}
+.buttons{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#file-input {
+    display: none;
+}
+.image-container .profile h2{
+    padding-top: 0px;
+    color: var(--text-color);
+    font-family: 'Ubuntu', sans-serif ;
+}
+.image-container .profile .user-status{
+    color:var(--text-color);
+    font-size: 22px;
+}
+.image-container .profile .user-about{
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 0px 15px;
+
+}
+#file-input-label {
+    font-size: 18px;
+    width: 200px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--text-color);
+    padding: 2px 5px;
+    border: 2px solid var(--text-color);
+    border-radius: 50px;
+    transition: background-color 0.3s, color 0.3s;
+}
+#file-input-label:hover{
+    background-color: grey;
+    color: white;
+    cursor: pointer;
+    border: 2px solid grey;
+}
+.edit-profile{
+    position: absolute;
+    background-color: var(--text-color);
+    right: 10%;
+    top: 290px;
+    width: 120px;
+    border-radius: 50px;
+    border: none;
+    color: black;
+}
+.intro{
+    /* background-color: aquamarine; */
+    padding: 130px 20px;
+    text-align: end;
+    color: white;
+    width: 500px;
+}
+#header1{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+#header2{
+    /* font-family: 'Kdam Thmor Pro', sans-serif; */
+    /* font-size: 45px; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.btn-intro{
+    margin-top: 10px;
+    width: 120px;
+    border-radius: 50px;
+    background-color: white;
+    color: var(--text-color);
+    border: none;
+}
+@media (max-width:887px){
+    
+    .intro{
+        display: none;
+    }
+}

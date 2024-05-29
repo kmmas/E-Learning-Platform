@@ -1,0 +1,491 @@
+.allg{
+    display: flex;
+    justify-content: right;
+    /* height: auto; */
+}
+html {
+    scroll-behavior: smooth;
+}
+
+.content{
+    background-image: url(../../images/final.jpg);
+    background-size:cover;
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px 20px rgba(0, 0, 0, 0.362);
+}
+.game{
+    width: 800px;
+    height: 800px;
+    position: absolute;
+    right: -300px;
+    top: calc(50% - 400px);
+    opacity: 0.5;
+    background-image: linear-gradient(rgb(240, 239, 239),rgb(0, 0, 0));
+    border-radius: 50%;
+}
+.content .body{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    width: 500px;
+    text-align: center;
+    border-radius: 0px 0px 120px;
+    opacity: 0.85;
+    font-size: 20px; 
+}
+.content .body::after{
+    position: absolute;
+    top: 96%;
+    left:10%;
+    content: "";
+    border: 20px solid;
+    border-color: rgb(0, 0, 0) rgba(0, 0, 0, 0) rgba(240, 255, 255, 0) rgba(165, 42, 42, 0);
+}
+.content h1{
+    margin: 0;
+    padding: 0;
+    font-size: 50px; 
+}
+#intoduction{
+    color: rgb(255, 255, 255);
+    font-size: 20px;   
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.content section{
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.content .body .info{
+    list-style: none;
+    padding:0;
+    margin: 0;
+    position: absolute;
+    background-color: rgb(14, 14, 14);
+    color: rgb(255, 255, 255);
+    top: 50%;
+    left: 0;
+    width: 200px;
+    text-align: left;
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.content .body:hover .info{
+    top: 100%;
+    opacity: 1;
+    color: white;
+}
+
+.content .body .info li{
+    padding: 5px;
+}
+.content .body .info li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: 0.2s;
+}
+.content .body .info li a:hover{
+    padding-left:8px ;
+}
+.content .body .info li:not(:last-child){
+    border-bottom: 3px rgb(69, 69, 69) solid;
+}
+.sl{
+    /* margin-top: 50px; */
+    margin-bottom: 35px;
+    width: 100%;
+}
+.presentation{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+.presentation .speech{
+    width: 50%;
+}
+.presentation .speech h1{
+    margin-top: 70px;
+    font-size: 55px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(70, 70, 70);
+}
+.speachtxt{
+    font-size: 23px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.419);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 60px;
+}
+.presentation .img2{
+    margin-top: 100px;
+    background-image: url(../../images/topstudents.png);
+    background-size: cover;
+    background-position: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 10% 50% 70% 30%;
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.372);
+}
+
+.start{
+    background-color: rgb(65, 65, 65);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.304);
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 170px;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0.8;
+    color: aliceblue;
+}
+.start:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.overview{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    /* background-color: aqua; */
+}
+.cont3{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: blueviolet; */
+    justify-content: center;
+    margin-top: 40px;
+    align-content: space-between;
+}
+.d{
+    /* background-color: blueviolet; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.topStudents{
+    border-radius: 10px;
+    background-image: url(../../images/profile.jpg);
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+}
+.videos{
+    border-radius: 10px;
+    background-image: url(../../images/onlinecourses.jpg);
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+}
+.centers{
+    border-radius: 10px;
+    background-image: url(../../images/makecourse.webp);
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+}
+.laws{
+    border-radius: 10px;
+    background-image: url(../../images/anouncements.jpg);
+    background-size: cover;
+    width: 280px;
+    height: 200px;
+}
+
+.cont3 div p{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Franklin Gothic Medium';
+    color: rgb(0, 0, 0);
+    letter-spacing: 1.1px;
+    margin: 0;
+    margin-top: 10px;
+}
+.cont3 div h2{
+    font-size: 28px;
+    text-transform: uppercase;
+    color: rgba(4, 100, 141, 0.653);
+    font-weight: 900;
+    font-family:  'Segoe UI';
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.24);
+    letter-spacing: 1.5px;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.learn{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.learn-txt{
+    width: 50%;
+}
+.learn-txt h1{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    color: rgb(81, 81, 81);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.learn section{
+    font-size: 23px;
+    letter-spacing: 1.2px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.728);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.doOrCourse{
+    display: flex;
+}
+.startlearn{
+    margin-top: 30px;
+    background-color: rgb(40, 40, 40);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.304);
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 170px;
+    text-align: center;
+    opacity: 0.8;
+    margin-right: 50px;
+}
+.startlearn:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.startlearn a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.learn-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 10% 40% 50% 70%;
+    background-image: url(../../images/courseback.jpg);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.372);
+
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+}
+.grad{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.grad-txt{
+    width: 50%;
+    margin-bottom: 50px;
+}
+.grad-txt h1{
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    color: rgb(81, 81, 81);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.grad section{
+    font-size: 23px;
+    letter-spacing: 1.2px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.728);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.startgrad{
+    margin-top: 30px;
+    background-color: rgb(60, 60, 60);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.304);
+    padding: 18px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 170px;
+    margin-bottom: 20px;
+    text-align: center;
+    opacity: 0.8;
+}
+.startgrad:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+.startgrad a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.grad-img{
+    width: 500px;
+    height: 500px;
+    border-radius: 50% 40% 50% 20%;
+    background-image: url(../../images/content1.jpg);
+    box-shadow: 2px 2px 20px 15px rgba(0, 0, 0, 0.372);
+
+    background-position: center;
+    background-size: cover;
+    background-color: aqua;
+}
+
+.members{
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px 0px;
+    text-transform: uppercase;
+    background-color: #303030;
+    color: white;
+    width: 50%;
+    position: relative;
+    box-shadow:2px 4px 10px 5px rgba(0, 0, 0, 0.304) ;
+}
+.members::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    height: 100%;
+    width: 20px;
+    top:0;
+    right: 0px;
+}
+
+
+@media (max-width:800px){
+    .presentation .speech h1{
+        margin-top: 50px;
+    }
+    .content .body:hover .info{
+        display: none;
+    }
+    .content .body{
+        width: 400px;
+    }
+    .content{
+        background-position: 35%;
+    } 
+    .content h1{
+        font-size: 40px; 
+    }
+    .presentation .speech{
+        width: 90%;
+    }
+    .presentation .img2{
+        display: none;
+    }
+    .learn-txt{
+        margin-bottom: 20px;
+        width: 85%;
+    }
+    .grad-txt{
+        margin-bottom: 20px;
+        width: 85%;
+    }
+    .staff .members{
+        
+        width: 70%;
+        
+    }
+    .staff-imgs{
+        width: 90%;
+    }
+    .cont3{
+        width: 90%;
+    }
+    .allitems{
+        min-width: 100%;
+        
+    }
+    .wrapper .sidebar{
+        
+        display: none;
+        
+    }
+    .navbar li{
+        margin-right: 0;
+        }
+}
+
+.big-footer{
+    margin-top: 120px;
+    background-color:#2a282b;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* height:auto; */
+}
+.footerlogo{
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 30px;
+}
+.footerlogo img{
+    width: 350px;
+}
+.footerlists{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footerlists .p ul{
+    padding: 0;
+}
+.footerlists .p{
+    padding-right: 50px;
+    margin-bottom: 30px;
+}
+.head{
+    color: rgb(172, 172, 172);
+}
+.footerlists .p ul li{
+    padding: 5px;
+    list-style: none;
+}
+.footerlists .p ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.footerlists .p ul li a:hover{
+    text-decoration: underline;
+}
+.copyright{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 20px;
+    border-top: 2px solid grey;
+    text-align: center;
+}
+@media (max-width:1417px){
+        .game{
+            width: 600px;
+            height: 600px;
+            top: 100%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+}

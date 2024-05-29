@@ -1,0 +1,245 @@
+
+.SSbody{
+    width: auto;
+    height: 100vh;
+    background-color: transparent;
+    background-image: url(../../images/d0UDNT.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    overflow: hidden;
+  }
+    .SSgradient-form {
+      height: 90% !important;
+      width: 80%;
+      border: 1px solid white;
+      border-radius: 15px;
+      background-color: transparent;
+    }
+    p{
+        margin: 0;
+    }
+  .SSall{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 15px;
+
+  }
+  .SSleftside{
+    width: 51%;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    /* border-radius: 15px; */
+    border-bottom-left-radius: 15px ;
+    border-top-left-radius: 15px ;
+
+  }
+  .SSrightside{
+    width: 49%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.214);
+  }
+
+  .SSff{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+    border: 1px solid;
+  }
+
+  
+  .SSLOGO{
+    border-radius: 15%;
+    width: 280px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+.SSfirst{
+width: 100%;
+height: 55%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.SSSecond{
+width: 100%;
+height: 45%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.SSback{
+background: rgb(248, 245, 245);
+width: 150px;
+border-radius: 8px;
+border: 1px solid rgb(35, 35, 35);
+height: 40px;
+color: black;
+margin-bottom: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.SSback:hover{
+    color: rgb(132, 132, 246);
+    background-color: rgb(213, 213, 213);
+}
+.SSback:active{
+    font-size: smaller;
+}
+.SShead{
+border: 1px solid;
+height: 10%;
+width: 90%;
+display: flex;
+justify-content: center;
+align-items: center; 
+background-color: rgb(222, 222, 222);
+border-radius: 10px;
+color: black;
+}
+
+
+.Sff2{
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+border: 1px solid;
+height: 80%;
+width: 95%;
+background-color: rgb(215, 216, 217);
+border-radius: 10px;
+border: 1px solid rgb(0, 0, 0);
+}
+.Sin{
+width: 100%;
+border-radius: 6px;
+padding-left: 5px;
+border: 1px solid rgb(183, 183, 183);
+height: 40px;
+}
+.Sin2{
+width: 49%;
+border-radius: 6px;
+padding-left: 5px;
+border: 1px solid rgb(183, 183, 183);
+height: 40px;
+color: black;
+
+}
+.Sflp{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+width: 90%;
+}
+.Sflp2{
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+width: 70%;
+}
+.Sbutt{
+width: 200px;
+height: 40px;
+border-radius: 10px;
+border: 1px solid black;
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(53, 138, 213);
+}
+.Sbutt:active{
+background: white;
+color: black;
+}
+.Sbutt:hover{
+background: rgb(73, 162, 241);
+text-decoration: none;
+color: white;
+}
+.SSTEX{
+  width: 90%;
+  text-align: center;
+}
+/* Style for the custom radio input */
+.Scustom-radio {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #3498db;
+  border-radius: 50%;
+  outline: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Style for the checked state of the custom radio input */
+.Scustom-radio:checked {
+  background-color: #3498db;
+}
+
+.SSvibrate {
+    animation: vibrate 0.3s ease-in-out infinite; /* Define the vibrate animation */
+    border-color: red;
+  }
+  @keyframes vibrate {
+    0%,
+    100% {
+      transform: translateX(0); /* Initial and final position */
+    }
+    25%,
+    75% {
+      transform: translateX(-5px); /* Move to the left */
+    }
+    50% {
+      transform: translateX(5px); /* Move to the right */
+    }
+  }
+  @media (max-width: 1000px) {
+    .SSall {
+      width: 900px; 
+      overflow: hidden;
+    }
+    .SSgradient-form{
+      width: 900px; 
+      overflow: hidden;
+      
+    }
+  }
+  @media (max-height: 600px) {
+    .SSall {
+      height: 600px; /* Set your constant height in pixels */
+      overflow: hidden;
+    }
+    .SSgradient-form{
+      height: 600px; /* Set your constant height in pixels */
+      overflow: hidden;
+    }
+  }

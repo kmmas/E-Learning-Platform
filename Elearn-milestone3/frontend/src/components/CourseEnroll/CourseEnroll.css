@@ -1,0 +1,269 @@
+.ECbody{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    background-color: var(--blue);
+}
+.ECnav{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.441);
+}
+.EClog{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.EClogo{
+    border-radius: 4px;
+}
+.EClinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    text-align: center;
+}
+.ECtotal{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgba(205, 205, 205, 0.621);
+}
+
+/* Style the tab */
+.ECtab {
+  border: 1px solid #3b3b3b99;
+  background-color:var(--blue);
+  height: 10%;
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 50px;
+  /* box-shadow: 0 0 1px 0 rgba(#185ee0, 0.15), 0 6px 12px 0 rgba(#185ee0, 0.15); */
+  transition: color 0.7s ease-in;
+
+}
+.ECname{
+    width: 40%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ECname2{
+    background-color: white;
+    color: black;
+    width: 50%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 0px;
+    font-weight: bold;
+}
+.ECsearcgbar{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 100%;
+    /* border: 1px solid; */
+}
+
+/* Create an active/current tablink class */
+.ECtab button.active {
+  color:white;
+  background-color: rgba(0, 0, 0, 0.686);
+  font-size: smaller;
+}
+
+
+.ECdata{
+    height: 80%;
+    width: 90%;
+    padding: 5px 5px 5px 15px ;
+    border-radius: 10px;
+    background-color: var(--blue);
+    color: black;
+}
+/* Style the tab content */
+.ECtabcontent {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    /* padding-bottom: 10px; */
+  }
+.ECna{
+    height: 8%;
+}
+.ECbut{
+    background-color:var(--blue);
+    color: white;
+    width: 140px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ECbut:hover{
+    color: white;
+    background-color: var(--blue);
+}
+.ECbut:active{
+    color: white;
+    font-size: smaller;
+}
+.ECCourses{
+    width: 90%;
+    min-height: 250px;
+    max-height: 350px;
+    background-color: rgba(211, 208, 208, 0.888);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 0);
+    padding: 5px 5px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    overflow:auto;
+}
+.EClink{
+    border: none;
+    outline: none;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+  }
+
+.ECh6{
+    font-weight: bold;
+    margin: 0px;
+}
+
+.ECh4{
+    font-weight: bold;
+}
+.ECTeacBut1{
+    background-color:var(--blue);
+    cursor: pointer;
+    color: white;
+    width: 100px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    display: flex;
+}
+
+.ECTeacBut1:hover{
+    color: white;
+    background-color: var(--blue);
+}
+.ECTeacBut1:active{
+    color: white;
+    font-size: smaller;
+}
+
+.ECtitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.ECsearch{
+    width: 80% ;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 15px;
+}
+/* Style the buttons inside the tab */
+.ECSebut{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color:rgb(232, 230, 230);
+    outline: none;
+    float: left;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    color: black;
+  /* font-size: 17px; */
+}
+
+/* Change background color of buttons on hover */
+.ECSebut:hover {
+  background-color: white;
+  border: 1px solid black;
+}
+.ECSebut:active {
+    font-size: smaller;
+    border: none;
+  }
+.ECh2{
+    color: white;
+}
+.ECreg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+    .ECbody {
+        width: 1000px; /* Set your constant width in pixels */
+        overflow: hidden;
+    }
+
+}
+@media (max-height: 600px) {
+    .ECbody {
+      height: 600px; /* Set your constant height in pixels */
+      overflow: hidden;
+    }
+
+  }

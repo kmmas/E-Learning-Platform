@@ -1,0 +1,181 @@
+::-webkit-scrollbar {
+  width: 18px;
+  background-color: transparent;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 9999px;
+  background-color: #000000;
+}
+
+.MCbody{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+
+}
+.MCnav{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.87);
+}
+.MClog{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.MClogo{
+    border-radius: 4px;
+}
+.MClinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 45%;
+    text-align: center;
+}
+.MCtotal{
+    height: 85%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--blue);
+}
+
+.MCbut{
+    background-color:var(--blue);
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+.MCbut:hover{
+    color: white;
+    background-color: var(--blue);
+}
+.MCbut:active{
+    color: white;
+    font-size: smaller;
+}
+.MCh2{
+    color: white;
+}
+.MCform1{
+    width: 80%;
+    height: 90%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+}
+.MCtitle{
+    width: 40%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    background-color: rgba(0, 0, 0, 0.875);
+    color: white;
+    border-radius: 20px;
+}
+.MCform2{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid rgba(0, 0, 0, 0.464);
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(209, 209, 209, 0.833);
+}
+.MCin{
+  width: 400px;
+  height: 40px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 20px;
+  padding: 0px 10px 0px 10px;
+  margin-left: 10px;
+}
+.MCtextarea{
+  width: 400px;
+  min-height: 100px;
+  max-height: 100px;
+  resize: none;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 20px;
+  padding: 10px 0px 10px 10px;
+  margin-left: 10px;
+  overflow-y: auto;
+}
+.MClab{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  color: black;
+  font-size: bold;
+}
+
+
+@media (max-width: 1000px) {
+    .MCbody {
+      width: 1000px; /* Set your constant width in pixels */
+      overflow: hidden;
+    }
+
+  }
+  @media (max-height: 600px) {
+    .MCbody {
+      height: 600px; /* Set your constant height in pixels */
+      overflow: hidden;
+    }
+
+  }
+  .MCvibrate {
+    animation: vibrate 0.3s ease-in-out infinite; /* Define the vibrate animation */
+    border-color: red;
+    color: red;
+  }
+  
+  @keyframes vibrate {
+    0%,
+    100% {
+      transform: translateX(0); /* Initial and final position */
+    }
+    25%,
+    75% {
+      transform: translateX(-5px); /* Move to the left */
+    }
+    50% {
+      transform: translateX(5px); /* Move to the right */
+    }
+  }
